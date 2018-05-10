@@ -581,14 +581,15 @@ func (menu *Menu) Draw() bool {
 		gl.Uniform2fv(menu.finalPositionUniform, 1, &menu.finalPosition[0])
 		gl.UniformMatrix4fv(menu.orthographicUniform, 1, false, &menu.Font.OrthographicMatrix[0])
 
-		gl.Enable(gl.BLEND)
-		gl.BlendEquation(gl.FUNC_ADD)
-		gl.BlendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA)
+		// JPF: blending seems to overwrite previously written pixels elsewhere in buffer
+		//gl.Enable(gl.BLEND)
+		//gl.BlendEquation(gl.FUNC_ADD)
+		//gl.BlendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA)
 
 		gl.BindVertexArray(menu.vao)
 		gl.DrawElements(gl.TRIANGLES, int32(menu.eboIndexCount), gl.UNSIGNED_INT, nil)
 		gl.BindVertexArray(0)
-		gl.Disable(gl.BLEND)
+		//gl.Disable(gl.BLEND)
 	}
 
 	for i := range menu.Labels {
