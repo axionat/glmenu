@@ -2,14 +2,15 @@ package main
 
 import (
 	"fmt"
-	"github.com/4ydx/glmenu"
-	"github.com/4ydx/gltext"
-	"github.com/4ydx/gltext/v4.1"
-	"github.com/go-gl/gl/v4.1-core/gl"
-	"github.com/go-gl/glfw/v3.2/glfw"
-	"golang.org/x/image/math/fixed"
 	"os"
 	"runtime"
+
+	"github.com/go-gl/gl/v4.1-core/gl"
+	"github.com/go-gl/glfw/v3.2/glfw"
+	"github.com/jasonpfox/glmenu"
+	"github.com/jasonpfox/gltext"
+	"github.com/jasonpfox/gltext/v4.1"
+	"golang.org/x/image/math/fixed"
 )
 
 var useStrictCoreProfile = (runtime.GOOS == "darwin")

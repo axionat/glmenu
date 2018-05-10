@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
-	"github.com/4ydx/glmenu"
-	"github.com/4ydx/gltext/v4.1"
+	"os"
+
 	"github.com/go-gl/glfw/v3.2/glfw"
 	"github.com/go-gl/mathgl/mgl32"
-	"os"
+	"github.com/jasonpfox/glmenu"
+	"github.com/jasonpfox/gltext/v4.1"
 )
 
 func MenuInit(window *glfw.Window, font *v41.Font) {
