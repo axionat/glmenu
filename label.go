@@ -1,8 +1,8 @@
 package glmenu
 
 import (
-	"github.com/4ydx/gltext/v4.1"
 	"github.com/go-gl/mathgl/mgl32"
+	"github.com/jasonpfox/gltext/v4.1"
 )
 
 type LabelAction int

@@ -1,11 +1,12 @@
 package glmenu
 
 import (
-	"github.com/4ydx/gltext/v4.1"
+	"time"
+
 	"github.com/go-gl/gl/v4.1-core/gl"
 	"github.com/go-gl/glfw/v3.2/glfw"
 	"github.com/go-gl/mathgl/mgl32"
-	"time"
+	"github.com/jasonpfox/gltext/v4.1"
 )
 
 var textboxVertexShader string = `

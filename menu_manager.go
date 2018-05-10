@@ -3,8 +3,9 @@ package glmenu
 import (
 	"errors"
 	"fmt"
-	"github.com/4ydx/gltext/v4.1"
+
 	"github.com/go-gl/glfw/v3.2/glfw"
+	"github.com/jasonpfox/gltext/v4.1"
 )
 
 type MenuManager struct {

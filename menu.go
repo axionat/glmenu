@@ -1,13 +1,14 @@
 package glmenu
 
 import (
-	"github.com/4ydx/gltext"
-	"github.com/4ydx/gltext/v4.1"
+	"image"
+	"math"
+
 	"github.com/go-gl/gl/v4.1-core/gl"
 	"github.com/go-gl/glfw/v3.2/glfw"
 	"github.com/go-gl/mathgl/mgl32"
-	"image"
-	"math"
+	"github.com/jasonpfox/gltext"
+	"github.com/jasonpfox/gltext/v4.1"
 )
 
 type Point struct {
