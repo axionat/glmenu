@@ -481,9 +481,10 @@ func NewMenu(window *glfw.Window, name string, font *v41.Font, defaults MenuDefa
 	// vao
 	gl.BindVertexArray(menu.vao)
 
+	// JPF: depth functions prevents text rendering
 	// 2DO: Change text depth to get it to render? For now this works.
-	gl.Enable(gl.DEPTH_TEST)
-	gl.DepthFunc(gl.LEQUAL)
+	//gl.Enable(gl.DEPTH_TEST)
+	//gl.DepthFunc(gl.LEQUAL)
 
 	// vbo
 	// specify the buffer for which the VertexAttribPointer calls apply
