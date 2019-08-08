@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/4ydx/gltext/v4.1"
-	"github.com/go-gl/glfw/v3.2/glfw"
+	"github.com/axionat/glfw/v3.2/glfw"
 )
 
 type MenuManager struct {
